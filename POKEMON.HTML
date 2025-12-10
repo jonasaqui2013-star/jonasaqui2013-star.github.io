@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Pokémon – Iniciais e Evoluções</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            background: #eef7ff;
+        }
+
+        /* MENU */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            background: #ffffffee;
+            backdrop-filter: blur(5px);
+            padding: 10px 0;
+            border-bottom: 2px solid #ddd;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 30px;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        nav ul li:hover {
+            color: #007bff;
+            transform: scale(1.1);
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .pokemon-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 12px;
+            width: 280px;
+            text-align: center;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 140px;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        @media(max-width:600px){
+            .card { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- MENU -->
+<nav>
+    <ul>
+        <li onclick="document.getElementById('inicio').scrollIntoView()">Página Inicial</li>
+        <li onclick="document.getElementById('evolucoes').scrollIntoView()">Evoluções</li>
+        <li onclick="document.getElementById('guia').scrollIntoView()">Guia de Escolha</li>
+    </ul>
+</nav>
+
+<!-- =========================================================
+                      ÁREA 1 – PÁGINA INICIAL
+========================================================= -->
+<section id="inicio">
+    <h2>Pokémon Iniciais da Primeira Geração</h2>
+
+    <div class="pokemon-grid">
+        <div class="card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png">
+            <h3>Bulbasaur</h3>
+            <p>Bulbasaur é um Pokémon Planta/Veneno muito equilibrado e considerado ideal para iniciantes.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png">
+            <h3>Charmander</h3>
+            <p>Charmander é um Pokémon de fogo que se destaca pela evolução extremamente poderosa.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png">
+            <h3>Squirtle</h3>
+            <p>Squirtle é do tipo água e tem excelente defesa, sendo ótimo para jogadores estratégicos.</p>
+        </div>
+    </div>
+
+    <p>Os Pokémon iniciais são os primeiros aliados que um treinador recebe. Eles acompanham a jornada inteira e representam o estilo de jogo escolhido pelo treinador.</p>
+
+    <p>Cada um deles oferece vantagens e desvantagens específicas em batalhas, especialmente nos primeiros ginásios.</p>
+
+    <p>Essa escolha influencia a dificuldade inicial do jogo, mas todos se tornam fortes quando bem treinados.</p>
+
+    <p>Independentemente do Pokémon escolhido, a experiência de evolução é uma das partes mais divertidas e marcantes de qualquer aventura Pokémon.</p>
+
+    <p>Na primeira geração, os tipos dos ginásios influenciam muito a escolha do iniciais — e isso é parte importante na tomada de decisão.</p>
+</section>
+
+<!-- =========================================================
+                      ÁREA 2 – EVOLUÇÕES
+========================================================= -->
+<section id="evolucoes">
+    <h2>Evoluções dos Pokémon Iniciais</h2>
+
+    <div class="pokemon-grid">
+        <div class="card">
+            <h3>Linha de Bulbasaur</h3>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png">
+            <p>A linha evolutiva de Bulbasaur se destaca por sua resistência e versatilidade contra vários tipos.</p>
+        </div>
+
+        <div class="card">
+            <h3>Linha de Charmander</h3>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png">
+            <p>Charmander evolui para Charizard, um dos Pokémon mais icônicos de toda a franquia.</p>
+        </div>
+
+        <div class="card">
+            <h3>Linha de Squirtle</h3>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png">
+            <p>Squirtle evolui para Blastoise, conhecido por sua resistência e ataques aquáticos poderosos.</p>
+        </div>
+    </div>
+
+    <p>As evoluções ocorrem conforme os Pokémon ganham experiência em batalhas.</p>
+    <p>Cada estágio evolutivo representa um salto significativo em poder e habilidades.</p>
+    <p>As evoluções também introduzem golpes mais fortes, que ampliam as possibilidades estratégicas.</p>
+    <p>A anatomia e o design dos Pokémon refletem sua progressão natural e seu tema principal.</p>
+    <p>Ver um Pokémon evoluir é sempre um dos momentos mais emocionantes da jornada.</p>
+</section>
+
+<!-- =========================================================
+                      ÁREA 3 – GUIA DE ESCOLHA
+========================================================= -->
+<section id="guia">
+    <h2>Guia para Escolher Seu Pokémon Inicial</h2>
+
+    <p>Escolher seu Pokémon inicial é uma decisão importante. Cada jogador possui um estilo próprio, e o ideal é escolher um Pokémon que combine com esse estilo.</p>
+
+    <p>Jogadores que preferem uma jornada mais tranquila normalmente escolhem Bulbasaur, já que ele tem vantagem nos primeiros ginásios.</p>
+
+    <p>Aqueles que gostam de jogar agressivamente e causar bastante dano podem escolher Charmander, apesar do começo mais difícil.</p>
+
+    <p>Se você gosta de estratégia, defesa e confiabilidade, Squirtle provavelmente será o mais adequado.</p>
+
+    <p>Com o passar do jogo, todos os iniciais ganham força e podem se tornar parte fundamental de um time competitivo.</p>
+
+    <p>O melhor inicial é sempre aquele que combina com seu jeito de jogar e com a forma como você quer viver sua aventura.</p>
+
+    <p>No final, todos os três são excelentes Pokémon – e qualquer escolha leva a uma jornada inesquecível.</p>
+</section>
+
+</body>
+</html>
